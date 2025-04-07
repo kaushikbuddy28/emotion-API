@@ -11,7 +11,7 @@ app = Flask(__name__)
 CORS(app)
 
 # Load the trained model
-model = tf.keras.models.load_model("best_model.h5")
+model = tf.keras.models.load_model("model.h5")
 
 # Define emotion classes
 classes = ['Angry', 'Disgust', 'Fear', 'Happy', 'Sad', 'Surprise', 'Neutral']
